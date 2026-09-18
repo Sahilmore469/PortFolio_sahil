@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="darkreader-lock">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sahil More – CSE Student & Data Science Enthusiast</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">(function(){emailjs.init('CaD0kpbVzmlASfxmS');})();</script>
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="preloader" class="preloader">
+    <div class="loader-circle-container">
+      <div class="loader-spinner"></div>
+      <img src="images/loader-logo.jpg" alt="SM" class="loader-logo-img">
+    </div>
+    <h2 class="loader-heading">Sahil More</h2>
+    <p class="loader-subheading" id="loaderText">Initializing environment...</p>
+  </div>
+
+<!-- ============ NAVBAR ============ -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">SM<span class="dot">.</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#certifications">Certs</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="cv-viewer" id="cvViewer" aria-label="View CV">CV</button>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i data-lucide="sun" class="icon-sun"></i>
+        <i data-lucide="moon" class="icon-moon"></i>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="hero-bg-orb orb1"></div>
+  <div class="hero-bg-orb orb2"></div>
+  <div class="hero-bg-orb orb3"></div>
+  <div class="hero-content">
+    <div class="hero-photo-wrap reveal">
+      <div class="hero-photo">
+        <div class="photo-ring"></div>
+        <div class="photo-placeholder">
+          <img src="images/profile.jpg" alt="Sahil More" />
+        </div>
+      </div>
+    </div>
+    <div class="hero-text">
+      <p class="hero-greeting reveal delay-1">👋 Hello, I'm</p>
+      <h1 class="hero-name reveal delay-2">Sahil<br/>More</h1>
+      <p class="hero-title reveal delay-3">
+        <span class="typed-text" id="typedText"></span><span class="cursor">|</span>
+      </p>
+      <p class="hero-bio reveal delay-4">
+        Computer Science student passionate about Data Science, Technology, and Software Development, focused on building intelligent, scalable, and data-driven solutions that turn complex data into actionable insights.
+      </p>
+      <div class="hero-btns reveal delay-5">
+        <a href="SahilMoreSpecializedCV.pdf" download class="btn btn-primary">
+          <i data-lucide="download"></i> Download Resume
+        </a>
+        <a href="#projects" class="btn btn-outline">
+          <i data-lucide="folder-open"></i> View Projects
+        </a>
+      </div>
+      <div class="hero-socials reveal delay-6">
+        <a href="https://github.com/Sahilmore469" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/sahilmore45" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.568c0-1.33-.027-3.039-1.852-3.039-1.853 0-2.136 1.447-2.136 2.942v5.665H9.346V9.169h3.414v1.561h.049c.476-.9 1.637-1.852 3.369-1.852 3.602 0 4.268 2.371 4.268 5.456v6.118zM5.337 7.433c-1.144 0-2.07-.928-2.07-2.07 0-1.142.926-2.068 2.07-2.068 1.14 0 2.067.926 2.067 2.068 0 1.142-.927 2.07-2.067 2.07zm1.777 13.019H3.56V9.169h3.553v11.283zM22.225 0H1.771C.792 0 0 .774 0 1.727v20.545C0 23.226.792 24 1.771 24h20.451C23.207 24 24 23.226 24 22.272V1.727C24 .774 23.207 0 22.225 0z"/></svg>
+        </a>
+        <a href="mailto:sahilmore253@gmail.com" class="social-link" aria-label="Email">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v16H4z" fill="none"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+    <i data-lucide="chevrons-down"></i>
+  </a>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-label reveal">About Me</div>
+    <h2 class="section-title reveal delay-1">Who I Am</h2>
+    <div class="about-grid">
+      <div class="about-text reveal delay-2">
+        <p>I am a third-year B.Tech Computer Science student at <strong>Lovely Professional University</strong> with a strong interest in Data Science, Machine Learning, and Software Development, aiming to develop data-driven and scalable software solutions.</p>
+        <p>I enjoy analyzing data, building predictive models, and developing solutions that solve real-world problems. I am continuously improving my technical skills through projects, certifications, and hands-on learning.</p>
+        <blockquote class="career-goal">
+          <i data-lucide="target"></i>
+          Aspiring Data Scientist focused on Machine Learning, Data Analytics, Intelligent Systems, and Software Development — driven to create impactful, data-driven solutions.
+        </blockquote>
+      </div>
+      <div class="about-cards reveal delay-3">
+        <div class="info-card">
+          <i data-lucide="graduation-cap"></i>
+          <div>
+            <span class="info-label">University</span>
+            <span class="info-value">Lovely Professional University</span>
+          </div>
+        </div>
+        <div class="info-card">
+          <i data-lucide="book-open"></i>
+          <div>
+            <span class="info-label">Degree</span>
+            <span class="info-value">B.Tech – CSE</span>
+          </div>
+        </div>
+        <div class="info-card">
+          <i data-lucide="calendar"></i>
+          <div>
+            <span class="info-label">Year</span>
+            <span class="info-value">3rd Year (Since Aug 2024)</span>
+          </div>
+        </div>
+        <div class="info-card">
+          <i data-lucide="star"></i>
+          <div>
+            <span class="info-label">CGPA</span>
+            <span class="info-value">8.38 / 10</span>
+          </div>
+        </div>
+        <div class="info-card">
+          <i data-lucide="map-pin"></i>
+          <div>
+            <span class="info-label">Location</span>
+            <span class="info-value">Punjab, India</span>
+          </div>
+        </div>
+        <div class="info-card">
+          <i data-lucide="heart"></i>
+          <div>
+            <span class="info-label">Hobbies</span>
+            <span class="info-value">Sports</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="section section-alt" id="skills">
+  <div class="container">
+    <div class="section-label reveal">Skills</div>
+    <h2 class="section-title reveal delay-1">What I Work With</h2>
+    <div class="skills-grid">
+      <div class="skill-group reveal delay-2">
+        <h3 class="skill-group-title"><i data-lucide="code-2"></i> Programming Languages</h3>
+        <div class="skill-badges">
+          <span class="badge badge-blue">Python</span>
+          <span class="badge badge-blue">R</span>
+          <span class="badge badge-blue">Java</span>
+          <span class="badge badge-blue">C++</span>
+          <span class="badge badge-blue">C</span>
+        </div>
+      </div>
+      <div class="skill-group reveal delay-3">
+        <h3 class="skill-group-title"><i data-lucide="cpu"></i> Data Science &amp; ML</h3>
+        <div class="skill-badges">
+          <span class="badge badge-amber">Pandas</span>
+          <span class="badge badge-amber">NumPy</span>
+          <span class="badge badge-amber">Scikit-learn</span>
+          <span class="badge badge-amber">TensorFlow</span>
+          <span class="badge badge-amber">OpenCV</span>
+          <span class="badge badge-amber">Matplotlib</span>
+          <span class="badge badge-amber">Seaborn</span>
+          <span class="badge badge-amber">SQL</span>
+        </div>
+      </div>
+      <div class="skill-group reveal delay-4">
+        <h3 class="skill-group-title"><i data-lucide="wrench"></i> Tools &amp; Platforms</h3>
+        <div class="skill-badges">
+          <span class="badge badge-green">Power BI</span>
+          <span class="badge badge-green">Tableau</span>
+          <span class="badge badge-green">Git</span>
+          <span class="badge badge-green">GitHub</span>
+          <span class="badge badge-green">VS Code</span>
+          <span class="badge badge-green">Linux</span>
+          <span class="badge badge-green">Streamlit</span>
+          <span class="badge badge-green">AWS</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section id="projects" class="section">
+  <div class="container">
+    <p class="section-label fade-up">Work</p>
+    <h2 class="section-title fade-up">Featured <span>Projects</span></h2>
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <div class="project-card fade-up">
+        <div class="project-img">
+          <img src="images/project1.jpg" alt="Project 1" />
+        </div>
+        <div class="project-body">
+          <span class="project-duration">Data Analytics · Power BI</span>
+          <h3 class="project-name">Cyber Threat Intelligence Dashboard</h3>
+          <p class="project-desc">A Power BI dashboard analyzing 3,000 global cybersecurity incidents across 12 countries (2015–2024), surfacing attack patterns, financial impact, and industry vulnerabilities.</p>
+          <ul class="project-highlights">
+            <li>9 custom DAX measures for risk &amp; impact KPIs</li>
+            <li>4-page dashboard: overview, attack analysis, impact &amp; response</li>
+            <li>Geographic + industry cross-tab drilldowns</li>
+            <li>Key finding: Man-in-the-Middle attacks most frequent, costliest</li>
+          </ul>
+          <div class="project-tech">
+            <span class="tech-tag">Power BI</span>
+            <span class="tech-tag">DAX</span>
+            <span class="tech-tag">Power Query</span>
+            <span class="tech-tag">Excel/CSV</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Sahilmore469/Cyberthreat-intelligence-dashboard" target="_blank" class="project-link gh">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card fade-up fade-up-delay-1">
+        <div class="project-img">
+          <img src="images/project2.jpg" alt="Project 2" />
+        </div>
+        <div class="project-body">
+          <span class="project-duration">Data Science · Government Data</span>
+          <h3 class="project-name">Cybercrime Motive Analysis — India 2013</h3>
+          <p class="project-desc">End-to-end analysis of cybercrime patterns across 35 Indian states/UTs using open government data, combining EDA with regression and classification models.</p>
+          <ul class="project-highlights">
+            <li>12 visualizations: heatmaps, feature importance, model comparison</li>
+            <li>Random Forest regressor for predicting total crimes per state</li>
+            <li>Logistic Regression classifier — 86% accuracy (high vs low crime state)</li>
+            <li>Key finding: Fraud/Illegal Gain most influential motive</li>
+          </ul>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Pandas</span>
+            <span class="tech-tag">Scikit-learn</span>
+            <span class="tech-tag">Jupyter</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Sahilmore469/cybercrime-analysis" target="_blank" class="project-link gh">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card fade-up fade-up-delay-2">
+        <div class="project-img">
+          <img src="images/project3.jpg" alt="Project 3" />
+        </div>
+        <div class="project-body">
+          <span class="project-duration">ML Web App · Flask</span>
+          <h3 class="project-name">Cardiac Risk Monitor</h3>
+          <p class="project-desc">A Flask web app that predicts heart disease risk from 13 patient vitals, trained and automatically selecting the best of three models on the Cleveland heart disease dataset.</p>
+          <ul class="project-highlights">
+            <li>Compares Logistic Regression, Random Forest, XGBoost by ROC-AUC</li>
+            <li>Random Forest selected — 82% accuracy, 0.908 ROC-AUC</li>
+            <li>Instant, no-reload predictions from a 13-field clinical form</li>
+            <li>Deployed live on Render</li>
+          </ul>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Flask</span>
+            <span class="tech-tag">Scikit-learn</span>
+            <span class="tech-tag">XGBoost</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Sahilmore469/heart-disease-app" target="_blank" class="project-link gh">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a href="https://heart-disease-app-3-81wu.onrender.com" target="_blank" class="project-link demo">
+              <i data-lucide="external-link" style="width:14px;height:14px"></i> Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-card fade-up">
+        <div class="project-img">
+          <img src="images/project4.jpg" alt="Project 4" />
+        </div>
+        <div class="project-body">
+          <span class="project-duration">ML Web App · Flask</span>
+          <h3 class="project-name">Exam Score Predictor</h3>
+          <p class="project-desc">A linear regression model trained on 6,606 real student records, wrapped in a chalkboard-themed web app that grades a student's likely exam score on the spot.</p>
+          <ul class="project-highlights">
+            <li>R² of 82.5%, average error of ±0.42 points</li>
+            <li>19-feature pipeline: study habits, attendance, motivation, peer influence</li>
+            <li>scikit-learn ColumnTransformer + LinearRegression pipeline</li>
+            <li>Deployed live on both Render and Vercel</li>
+          </ul>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Flask</span>
+            <span class="tech-tag">Scikit-learn</span>
+            <span class="tech-tag">Pandas</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Sahilmore469/student-performance-app" target="_blank" class="project-link gh">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a href="https://studentperformancewebapp.vercel.app" target="_blank" class="project-link demo">
+              <i data-lucide="external-link" style="width:14px;height:14px"></i> Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="project-card fade-up fade-up-delay-1">
+        <div class="project-img">
+          <img src="images/project5.jpg" alt="Project 5" />
+        </div>
+        <div class="project-body">
+          <span class="project-duration">Datathon · Cybersecurity</span>
+          <h3 class="project-name">AgentIQ Zero-Trust SOC</h3>
+          <p class="project-desc">An enterprise-grade Zero-Trust SOC command center built for the TransOrg AgentIQ Datathon, correlating IAM, endpoint, and firewall telemetry to surface insider threats.</p>
+          <ul class="project-highlights">
+            <li>Automated data-rescue pipeline cleaning 60K+ raw log rows</li>
+            <li>Star-schema data model with cross-system correlation engine</li>
+            <li>Explainable 0–100 multi-vector risk scoring across 4 signals</li>
+            <li>Bonus: Llama-3-powered natural-language-to-chart AI agent</li>
+          </ul>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Streamlit</span>
+            <span class="tech-tag">Pandas</span>
+            <span class="tech-tag">Groq / Llama-3</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Sahilmore469/AgentIQ-ZeroTrust-SOC" target="_blank" class="project-link gh">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a href="https://datathon-e4opafeyjqqdbdxirjygbc.streamlit.app" target="_blank" class="project-link demo">
+              <i data-lucide="external-link" style="width:14px;height:14px"></i> Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="project-card fade-up fade-up-delay-2">
+        <div class="project-img">
+          <img src="images/project6.jpg" alt="Project 6" />
+        </div>
+        <div class="project-body">
+          <span class="project-duration">Computer Vision · Deep Learning</span>
+          <h3 class="project-name">Vehicle Detection &amp; Fine-Grained Classification</h3>
+          <p class="project-desc">A two-stage computer vision pipeline that finds vehicles in an image with YOLOv8, then identifies the exact make, model, and year with a fine-tuned ResNet50.</p>
+          <ul class="project-highlights">
+            <li>196-class classification on the Stanford Cars dataset</li>
+            <li>83.86% top-1 / 96.84% top-5 accuracy</li>
+            <li>Grad-CAM interpretability confirms model focuses on grilles/headlights</li>
+            <li>Deployed live on Streamlit Community Cloud</li>
+          </ul>
+          <div class="project-tech">
+            <span class="tech-tag">PyTorch</span>
+            <span class="tech-tag">YOLOv8</span>
+            <span class="tech-tag">ResNet50</span>
+            <span class="tech-tag">Streamlit</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Sahilmore469/vehicle-detection-classification" target="_blank" class="project-link gh">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a href="https://vehicle-detection-classification-mt3cj32atsaqx2qinw2mrn.streamlit.app" target="_blank" class="project-link demo">
+              <i data-lucide="external-link" style="width:14px;height:14px"></i> Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="section section-alt" id="experience">
+  <div class="container">
+    <div class="section-label reveal">Experience</div>
+    <h2 class="section-title reveal delay-1">Training &amp; Internships</h2>
+    <div class="timeline">
+      <div class="timeline-item reveal delay-2">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div>
+              <h3 class="timeline-title">A Guide to Machine Learning with Data Science</h3>
+              <p class="timeline-org">CipherSchools</p>
+            </div>
+            <span class="timeline-date">Aug 2026</span>
+          </div>
+          <ul class="timeline-list">
+            <li>Completed a hands-on ML training program covering the end-to-end workflow &mdash; EDA, preprocessing, model building, evaluation, and deployment.</li>
+            <li>Trained and compared <strong>Random Forest</strong>, Logistic Regression, and <strong>XGBoost</strong> models on the UCI Cleveland Heart Disease dataset, selecting Random Forest for its best ROC-AUC (0.908).</li>
+            <li>Built and deployed a <strong>Flask web app</strong> that serves the model live via a 13-field clinical intake form returning instant, interpretable risk predictions.</li>
+          </ul>
+          <div class="timeline-tech">
+            <span class="tech-badge">Python</span>
+            <span class="tech-badge">Flask</span>
+            <span class="tech-badge">Scikit-learn</span>
+            <span class="tech-badge">XGBoost</span>
+            <span class="tech-badge">Pandas</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EDUCATION ============ -->
+<section class="section" id="education">
+  <div class="container">
+    <div class="section-label reveal">Education</div>
+    <h2 class="section-title reveal delay-1">Academic Background</h2>
+    <div class="edu-grid">
+      <div class="edu-card reveal delay-2">
+        <div class="edu-icon"><i data-lucide="graduation-cap"></i></div>
+        <div class="edu-body">
+          <h3>Lovely Professional University</h3>
+          <p class="edu-degree">B.Tech – Computer Science and Engineering</p>
+          <div class="edu-meta">
+            <span><i data-lucide="calendar"></i> Aug 2024 – Present</span>
+            <span class="edu-grade">CGPA: 8.38</span>
+          </div>
+        </div>
+      </div>
+      <div class="edu-card reveal delay-3">
+        <div class="edu-icon"><i data-lucide="book"></i></div>
+        <div class="edu-body">
+          <h3>Rotary English Medium School</h3>
+          <p class="edu-degree">Intermediate (12th)</p>
+          <div class="edu-meta">
+            <span><i data-lucide="calendar"></i> 2023 – 2024</span>
+            <span class="edu-grade">77.2%</span>
+          </div>
+        </div>
+      </div>
+      <div class="edu-card reveal delay-4">
+        <div class="edu-icon"><i data-lucide="book"></i></div>
+        <div class="edu-body">
+          <h3>Rotary English Medium School</h3>
+          <p class="edu-degree">Matriculation (10th)</p>
+          <div class="edu-meta">
+            <span><i data-lucide="calendar"></i> 2021 – 2022</span>
+            <span class="edu-grade">79.40%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CERTIFICATIONS ============ -->
+<section id="certifications" class="section">
+  <div class="container">
+    <p class="section-label fade-up">Credentials</p>
+    <h2 class="section-title fade-up"><span>Certifications</span></h2>
+    <div class="cert-grid">
+      <a class="cert-card image-based fade-up" href="https://drive.google.com/file/d/1569BjMTjnr-vt7oBTpsLvbSULkcKD432/view" target="_blank">
+        <div class="cert-img-wrap">
+          <img src="images/cert1.png" alt="NPTEL - Programming in Java" />
+        </div>
+        <div class="cert-info">
+          <div class="cert-name">NPTEL - Programming in Java</div>
+          <div class="cert-link">View Credential <i data-lucide="external-link" style="width:12px;height:12px;margin-left:4px"></i></div>
+        </div>
+      </a>
+      <a class="cert-card image-based fade-up" href="https://www.udemy.com/certificate/UC-59d4016e-35ab-4283-99b4-497f962abb3f/" target="_blank">
+        <div class="cert-img-wrap">
+          <img src="images/cert2.png" alt="Udemy - Data Analytics & Visualization" />
+        </div>
+        <div class="cert-info">
+          <div class="cert-name">Udemy - Data Analytics & Visualization</div>
+          <div class="cert-link">View Credential <i data-lucide="external-link" style="width:12px;height:12px;margin-left:4px"></i></div>
+        </div>
+      </a>
+      <a class="cert-card image-based fade-up" href="https://drive.google.com/file/d/1JaGFMwaVxifHENX6m1sn3qJCNeYA6Mf7/view" target="_blank">
+        <div class="cert-img-wrap">
+          <img src="images/cert3.png" alt="Oracle AI Database Foundations" />
+        </div>
+        <div class="cert-info">
+          <div class="cert-name">Oracle AI Database Foundations</div>
+          <div class="cert-link">View Credential <i data-lucide="external-link" style="width:12px;height:12px;margin-left:4px"></i></div>
+        </div>
+      </a>
+      <a class="cert-card image-based fade-up" href="https://drive.google.com/file/d/1gF9YejZYSwmmHED35TbGiCpiEqA-LnTS/view" target="_blank">
+        <div class="cert-img-wrap">
+          <img src="images/cert4.png" alt="Deloitte Data Analytics Job Simulation" />
+        </div>
+        <div class="cert-info">
+          <div class="cert-name">Deloitte Data Analytics Job Simulation</div>
+          <div class="cert-link">View Credential <i data-lucide="external-link" style="width:12px;height:12px;margin-left:4px"></i></div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ACHIEVEMENTS ============ -->
+<section class="section" id="achievements">
+  <div class="container">
+    <div class="section-label reveal">Achievements</div>
+    <h2 class="section-title reveal delay-1">Highlights &amp; Awards</h2>
+    <div class="achieve-grid">
+      <div class="achieve-card placeholder-card reveal delay-2">
+        <i data-lucide="rocket"></i>
+        <h3>Hackathons</h3>
+        <p>Participated in <strong>Bharatiya Antariksh Hackathon (ISRO)</strong>, <strong>UniHack</strong>, and the <strong>Adobe University Hackathon</strong>. Built AI platforms for urban heat mitigation and industrial product intelligence.</p>
+      </div>
+      <div class="achieve-card placeholder-card reveal delay-3">
+        <i data-lucide="code"></i>
+        <h3>Coding Competitions</h3>
+        <p>Solved <strong>300+ DSA problems</strong> across LeetCode, Codeforces, and CodeChef, focusing heavily on algorithms, data structures, and competitive programming.</p>
+      </div>
+      <div class="achieve-card placeholder-card reveal delay-4">
+        <i data-lucide="star"></i>
+        <h3>Academic Excellence</h3>
+        <p>Currently pursuing a B.Tech in Computer Science and Engineering at Lovely Professional University with a strong academic standing and a <strong>CGPA of 8.38</strong>.</p>
+      </div>
+      <div class="achieve-card placeholder-card reveal delay-5">
+        <i data-lucide="award"></i>
+        <h3>Specialized Training</h3>
+        <p>Completed intensive training in Machine Learning & Data Science by CipherSchools. Built and deployed end-to-end ML capstone projects like Heart Disease Prediction web apps.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OPEN SOURCE ============ -->
+<section class="section section-alt" id="opensource">
+  <div class="container">
+    <div class="section-label reveal">Open Source</div>
+    <h2 class="section-title reveal delay-1">GitHub Activity</h2>
+    <div class="github-section reveal delay-2">
+      <div class="github-profile-card">
+        <div class="gh-avatar"><svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></div>
+        <div class="gh-info">
+          <h3>Sahilmore469</h3>
+          <a href="https://github.com/Sahilmore469" target="_blank" rel="noopener" class="gh-link">
+            github.com/Sahilmore469 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+        <div class="gh-stats">
+          <div class="gh-stat">
+            <span class="gh-stat-num" id="repoCount">—</span>
+            <span class="gh-stat-label">Repositories</span>
+          </div>
+          <div class="gh-stat">
+            <span class="gh-stat-num" id="starCount">—</span>
+            <span class="gh-stat-label">Stars</span>
+          </div>
+          <div class="gh-stat">
+            <span class="gh-stat-num" id="followerCount">—</span>
+            <span class="gh-stat-label">Followers</span>
+          </div>
+        </div>
+      </div>
+      <div class="gh-repos" id="ghRepos">
+        <div class="gh-repo-placeholder">
+          <i data-lucide="folder-git-2"></i>
+          <p>Repositories will load here.</p>
+          <a href="https://github.com/Sahilmore469" target="_blank" class="btn btn-outline" style="margin-top:1rem">Visit GitHub Profile</a>
+        </div>
+      </div>
+    </div>
+    <!-- GitHub Contribution Graph -->
+    <div class="os-contrib fade-up">
+      <div class="os-contrib-header">
+        <span class="section-label" style="margin:0">Contribution Graph</span>
+        <a href="https://github.com/Sahilmore469" target="_blank" class="os-gh-profile-link">View full profile →</a>
+      </div>
+      <img src="https://ghchart.rshah.org/0d6efd/Sahilmore469" alt="Sahil More GitHub Contribution Graph" class="os-contrib-img">
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="section-label reveal">Contact</div>
+    <h2 class="section-title reveal delay-1">Let's Connect</h2>
+    <div class="contact-grid">
+      <div class="contact-info reveal delay-2">
+        <p class="contact-intro">Have an opportunity, project idea, or just want to say hi? I'd love to hear from you.</p>
+        <div class="contact-links">
+          <a href="mailto:sahilmore253@gmail.com" class="contact-item">
+            <div class="contact-icon"><i data-lucide="mail"></i></div>
+            <div>
+              <span class="contact-item-label">Email</span>
+              <span class="contact-item-value">sahilmore253@gmail.com</span>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/sahilmore45" target="_blank" rel="noopener" class="contact-item">
+            <div class="contact-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.568c0-1.33-.027-3.039-1.852-3.039-1.853 0-2.136 1.447-2.136 2.942v5.665H9.346V9.169h3.414v1.561h.049c.476-.9 1.637-1.852 3.369-1.852 3.602 0 4.268 2.371 4.268 5.456v6.118zM5.337 7.433c-1.144 0-2.07-.928-2.07-2.07 0-1.142.926-2.068 2.07-2.068 1.14 0 2.067.926 2.067 2.068 0 1.142-.927 2.07-2.067 2.07zm1.777 13.019H3.56V9.169h3.553v11.283zM22.225 0H1.771C.792 0 0 .774 0 1.727v20.545C0 23.226.792 24 1.771 24h20.451C23.207 24 24 23.226 24 22.272V1.727C24 .774 23.207 0 22.225 0z"/></svg></div>
+            <div>
+              <span class="contact-item-label">LinkedIn</span>
+              <span class="contact-item-value">linkedin.com/in/sahilmore45</span>
+            </div>
+          </a>
+          <a href="https://github.com/Sahilmore469" target="_blank" class="contact-item">
+            <div class="contact-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></div>
+            <div>
+              <span class="contact-item-label">GitHub</span>
+              <span class="contact-item-value">github.com/Sahilmore469</span>
+            </div>
+          </a>
+          <div class="contact-item">
+            <div class="contact-icon"><i data-lucide="map-pin"></i></div>
+            <div>
+              <span class="contact-item-label">Location</span>
+              <span class="contact-item-value">Punjab, India</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="your@email.com" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%">
+          <i data-lucide="send"></i> Send Message
+        </button>
+        <p class="form-note" id="formNote"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <p class="footer-copy">© 2026 Sahil More. Crafted with ❤️ and a lot of data.</p>
+      <div class="footer-socials">
+        <a href="https://github.com/Sahilmore469" target="_blank" rel="noopener" aria-label="GitHub"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></a>
+        <a href="https://www.linkedin.com/in/sahilmore45" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.568c0-1.33-.027-3.039-1.852-3.039-1.853 0-2.136 1.447-2.136 2.942v5.665H9.346V9.169h3.414v1.561h.049c.476-.9 1.637-1.852 3.369-1.852 3.602 0 4.268 2.371 4.268 5.456v6.118zM5.337 7.433c-1.144 0-2.07-.928-2.07-2.07 0-1.142.926-2.068 2.07-2.068 1.14 0 2.067.926 2.067 2.068 0 1.142-.927 2.07-2.067 2.07zm1.777 13.019H3.56V9.169h3.553v11.283zM22.225 0H1.771C.792 0 0 .774 0 1.727v20.545C0 23.226.792 24 1.771 24h20.451C23.207 24 24 23.226 24 22.272V1.727C24 .774 23.207 0 22.225 0z"/></svg></a>
+        <a href="mailto:sahilmore253@gmail.com" aria-label="Email"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v16H4z" fill="none"></path><polyline points="22,6 12,13 2,6"></polyline></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Alternate Portfolio -->
+<a href="https://portfolio-lake-two-41.vercel.app/" target="_blank" rel="noopener" class="alt-portfolio-btn" aria-label="View Other Portfolio" title="View My Other Portfolio">
+  <i data-lucide="external-link"></i>
+</a>
+
+<!-- Back to top -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <i data-lucide="arrow-up"></i>
+</button>
+
+<!-- CV Modal -->
+<div class="cv-modal" id="cvModal">
+  <div class="cv-modal-content">
+    <button class="cv-modal-close" id="cvModalClose" aria-label="Close CV viewer">
+      <i data-lucide="x"></i>
+    </button>
+    <iframe id="cvIframe" src="SahilMoreSpecializedCV.pdf" class="cv-iframe"></iframe>
+  </div>
+</div>
+<div class="cv-modal-overlay" id="cvModalOverlay"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
